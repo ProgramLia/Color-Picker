@@ -1,0 +1,85 @@
+/* ===== reset ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+/* ===== body ===== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    min-height: 100vh;
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== container ===== */
+.container {
+    background: linear-gradient(to left, #fbb13c, #0064fb);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    max-width: 30rem;
+    width: 100%;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    border: 0.150rem solid #fff;
+}
+
+/* ===== title ===== */
+.title span {
+    font-size: 2rem;
+    color: white;
+}
+
+/* ===== hexadecimal ===== */
+.hexadecimal span {
+    font-size: 1.1rem;
+    letter-spacing: 0.7rem;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0.140rem solid #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+/* ==== input color ===== */
+.input-color {
+    text-align: center;
+    width: 100%;
+}
+
+input[type="color"] {
+    display: none;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    border: 0.140rem solid #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: block;
+    width: max-content;
+    margin: auto;
+    color: #fff;
+    transition: 0.3s;
+}
+
+label:hover  {
+    background: linear-gradient(to left, #fbb13c, #0064fb);
+    transform: scale(103%);
+}
+
+label:active {
+    transform: scale(95%); 
+}
