@@ -24,6 +24,7 @@ body {
     border-radius: 0.5rem;
     padding: 1rem;
     display: flex;
+    position: relative;
     max-width: 30rem;
     width: 100%;
     gap: 1.5rem;
@@ -82,4 +83,28 @@ label:hover  {
 
 label:active {
     transform: scale(95%); 
+}
+
+button {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+    background-color: #fbb13c;
+    color: #fff;
+    border: 0.140rem solid #fff;
+    border-radius: 0.3rem;
+    &:hover {
+        background-color: #fc842e;
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(95%);
+    }
+}
+
+.information {
+    color: white;
+    
 }
